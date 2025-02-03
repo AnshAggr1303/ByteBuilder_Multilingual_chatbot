@@ -1,4 +1,4 @@
-Multilingual Chatbot using Rasa, FAISS, and GPT-2
+Multilingual Chatbot using Rasa, FAISS, and GPT-2.
 This project is a multilingual AI chatbot built using:
 
 Rasa (Natural Language Understanding & Dialog Management)

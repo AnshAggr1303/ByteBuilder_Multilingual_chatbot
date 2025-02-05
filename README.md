@@ -31,24 +31,3 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ---
 
-## 📂 Project Structure
-/Quark_final
-│
-├── bot.py                      # Main script to run the Telegram bot
-├── bloom_response.py           # Handles response generation using Bloom-560m
-├── translator.py               # Detects language and handles input/output translation
-├── vector_store.py             # Manages FAISS-based document retrieval
-├── index_documents.py          # Indexes health-related documents using TF-IDF and FAISS
-├── search.py                   # Test script to manually search FAISS
-│
-├── faiss_index.bin             # Serialized FAISS index for fast search
-├── tfidf_vectorizer.pkl        # Serialized TF-IDF vectorizer
-├── documents.pkl               # Serialized health-related documents
-│
-├── domain.yml                  # Defines intents, entities, and responses for Rasa
-├── config.yml                  # Rasa configuration for pipelines
-├── nlu.yml                     # Training data for Rasa NLU
-├── models/                     # Trained Rasa models
-│
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation

@@ -31,26 +31,6 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ---
 
-## 📂 Project Structure
-
-/Quark_final
-│
-├── bot.py                      # Main file to run the Telegram bot
-├── bloom_response.py           # Handles response generation using Bloom-560m
-├── translator.py               # Handles language detection and translation
-├── vector_store.py             # Manages FAISS-based document retrieval
-├── index_documents.py          # Indexes health-related documents using TF-IDF and FAISS
-├── search.py                   # Test script to manually search FAISS
-│
-├── domain.yml                  # Defines intents, entities, and responses for Rasa
-├── config.yml                  # Rasa configuration for pipelines
-├── nlu.yml                     # Training data for Rasa NLU
-│
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
-
----
-
 ## 📋 Requirements
 - **Python**: 3.8+
 - **Pip**: Latest version
@@ -61,8 +41,8 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ## 🛠️ Setup Instructions
 1. Clone the Repository
-- git clone https://github.com/your-username/health-chatbot.git
-- cd health-chatbot
+- git clone https://github.com/AnshAggr1303/ByteBuilder_Multilingual_chatbot.git
+- cd ByteBuilder_Multilingual_chatbot
 
 2. Set Up Virtual Environments
 - For Bloom LLM and FAISS:
@@ -106,6 +86,11 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
+
+---
+
+## 📄 License
+This project is licensed under the MIT License. See the **`LICENSE`** file for details.
 
 ---
 

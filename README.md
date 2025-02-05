@@ -79,7 +79,7 @@ This project is a **multilingual chatbot** that helps users find **health-relate
    1. Activate the Rasa virtual environment
    2. Start the Rasa server with the API enabled
 
-5.2 Run the Telegram Bot
+6. Run the Telegram Bot
    1. Open a new terminal and navigate to the project directory
    2. Activate the Bloom virtual environment
    3. Run the bot
@@ -101,5 +101,16 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 - **Integrate a knowledge graph:**  
   Use a knowledge graph to provide structured and context-aware responses.
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
+
+---
+
+## 📬 Contact
+If you have any questions or suggestions, feel free to contact me:
+- **Email:** anshagrawal148@gmail.com.com
 
 ---

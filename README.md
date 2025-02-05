@@ -31,3 +31,14 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ---
 
+## 🌟 Future Enhancements
+- **Fine-tune Bloom or use a larger model:**  
+  Experiment with Bloom-1B or fine-tune the existing model for more specific health-related answers.
+
+- **Expand document base:**  
+  Add documents covering a wider range of health topics, treatments, and policies.
+
+- **Integrate a knowledge graph:**  
+  Use a knowledge graph to provide structured and context-aware responses.
+
+  ---

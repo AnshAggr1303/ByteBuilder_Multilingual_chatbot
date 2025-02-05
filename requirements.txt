@@ -1,0 +1,9 @@
+faiss-cpu
+numpy
+scikit-learn
+transformers
+torch
+python-telegram-bot
+langdetect
+deep-translator
+rasa

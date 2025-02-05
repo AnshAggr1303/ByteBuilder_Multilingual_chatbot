@@ -1,0 +1,780 @@
+version: "3.1"
+
+nlu:
+  ## 1. LIC JEEVAN AROGYA BROCHURE
+  - intent: lic_jeevan_arogya_brochure_general_information
+    examples: |
+      - What is LIC Jeevan Arogya?
+      - Can you explain this health plan?
+  - intent: lic_jeevan_arogya_brochure_eligibility_inquiry
+    examples: |
+      - Who can be covered under this policy?
+      - What is the maximum entry age for parents?
+  - intent: lic_jeevan_arogya_brochure_coverage_details
+    examples: |
+      - How long are children covered under this policy?
+      - What is the maximum lifetime benefit period?
+  - intent: lic_jeevan_arogya_brochure_benefits_inquiry
+    examples: |
+      - What is Hospital Cash Benefit?
+      - Tell me about Major Surgical Benefit.
+  - intent: lic_jeevan_arogya_brochure_premium_calculation
+    examples: |
+      - How much is the premium for ₹2000 daily benefit for a 30-year-old male?
+      - What are the premium rates for children?
+  - intent: lic_jeevan_arogya_brochure_claim_process
+    examples: |
+      - How can I claim Major Surgical Benefit?
+      - What documents do I need for a claim?
+  - intent: lic_jeevan_arogya_brochure_waiting_periods_exclusions
+    examples: |
+      - What is the waiting period for pre-existing conditions?
+      - Are cosmetic surgeries covered under this plan?
+  - intent: lic_jeevan_arogya_brochure_payment_options_discounts
+    examples: |
+      - Can I pay premiums half-yearly?
+      - Are there any discounts for higher coverage levels?
+  - intent: lic_jeevan_arogya_brochure_policy_customization
+    examples: |
+      - Can I add my spouse after marriage?
+      - What riders can I include with this policy?
+  - intent: lic_jeevan_arogya_brochure_policy_termination_revival
+    examples: |
+      - What happens if I miss a premium payment?
+      - How can I revive my lapsed policy?
+  - intent: lic_jeevan_arogya_brochure_contact_information
+    examples: |
+      - How can I contact LIC customer care?
+      - Where is the nearest LIC branch office?
+
+  ## 2. 876-512N356V02DIGITERM
+  - intent: lic_digiterm_general_information
+    examples: |
+      - What is LIC Digi Term?
+      - Can you explain this life insurance plan?
+  - intent: lic_digiterm_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 50-year-old buy this policy?
+  - intent: lic_digiterm_coverage_details
+    examples: |
+      - What is the minimum sum assured?
+      - What is the maximum policy term under this plan?
+  - intent: lic_digiterm_premium_calculation
+    examples: |
+      - How much is the premium for a ₹1 crore sum assured for a 30-year-old?
+      - What are the premium rates for non-smokers?
+  - intent: lic_digiterm_death_benefit_options
+    examples: |
+      - What is Level Sum Assured?
+      - How does Increasing Sum Assured work?
+  - intent: lic_digiterm_payment_options
+    examples: |
+      - Can I pay premiums yearly?
+      - What is a single premium payment option?
+  - intent: lic_digiterm_discounts_and_rebates
+    examples: |
+      - Are there any rebates for high sum assured amounts?
+      - Do women get special premium rates under this plan?
+  - intent: lic_digiterm_claim_process
+    examples: |
+      - How can my nominee claim the death benefit?
+      - Can death benefits be taken in installments?
+  - intent: lic_digiterm_policy_revival
+    examples: |
+      - What happens if I miss a premium payment?
+      - How can I revive my lapsed policy?
+  - intent: lic_digiterm_exclusions
+    examples: |
+      - Does this plan cover suicide cases?
+      - Are there any exclusions in this policy?
+  - intent: lic_digiterm_grievance_redressal
+    examples: |
+      - How can I file a complaint with LIC?
+      - What is IRDAI's grievance redressal mechanism?
+
+  ## 3. 955-512N350V02NEWJEEVANAMAR
+  - intent: lic_new_jeevan_amar_general_information
+    examples: |
+      - What is LIC New Jeevan Amar?
+      - Can you explain this term insurance plan?
+  - intent: lic_new_jeevan_amar_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 60-year-old buy this policy?
+  - intent: lic_new_jeevan_amar_coverage_details
+    examples: |
+      - What is the minimum sum assured?
+      - What is the maximum policy term under this plan?
+  - intent: lic_new_jeevan_amar_premium_calculation
+    examples: |
+      - How much is the premium for ₹50 lakh sum assured for a 30-year-old male?
+      - What are the premiums for non-smokers under this plan?
+  - intent: lic_new_jeevan_amar_death_benefit_options
+    examples: |
+      - What is Level Sum Assured?
+      - How does Increasing Sum Assured work?
+  - intent: lic_new_jeevan_amar_payment_options
+    examples: |
+      - Can I pay premiums yearly?
+      - What is Limited Premium payment mode?
+  - intent: lic_new_jeevan_amar_discounts_and_rebates
+    examples: |
+      - Are there any rebates for high sum assured amounts?
+      - Do women get special premium rates under this plan?
+  - intent: lic_new_jeevan_amar_claim_process
+    examples: |
+      - How can my nominee claim the death benefit?
+      - Can death benefits be taken in installments?
+  - intent: lic_new_jeevan_amar_policy_revival
+    examples: |
+      - What happens if I miss a premium payment?
+      - How can I revive my lapsed policy?
+  - intent: lic_new_jeevan_amar_exclusions
+    examples: |
+      - Does this plan cover suicide cases?
+      - Are there any exclusions in this policy?
+  - intent: lic_new_jeevan_amar_grievance_redressal
+    examples: |
+      - How can I file a complaint with LIC?
+      - What is IRDAI's grievance redressal mechanism?
+
+  ## 4. 102268-JEEVAN-UTSAV-SALES-BROCHURE
+  - intent: lic_jeevan_utsav_brochure_general_information
+    examples: |
+      - What is LIC Jeevan Utsav?
+      - Explain the key features of this plan.
+  - intent: lic_jeevan_utsav_brochure_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 65-year-old purchase this plan?
+  - intent: lic_jeevan_utsav_brochure_coverage_details
+    examples: |
+      - What is the minimum Basic Sum Assured?
+      - What is the maximum Premium Paying Term?
+  - intent: lic_jeevan_utsav_brochure_premium_calculation
+    examples: |
+      - What is the premium for ₹10 lakh Sum Assured for a 30-year-old?
+      - How do modal loadings affect premiums?
+  - intent: lic_jeevan_utsav_brochure_death_benefit
+    examples: |
+      - How is Sum Assured on Death calculated?
+      - What is the minimum death benefit guarantee?
+  - intent: lic_jeevan_utsav_brochure_survival_benefit_options
+    examples: |
+      - What is the difference between Option I and Option II?
+      - How does Flexi Income Benefit accumulation work?
+  - intent: lic_jeevan_utsav_brochure_riders
+    examples: |
+      - What does the Accidental Death Rider cover?
+      - Can I add the Premium Waiver Rider later?
+  - intent: lic_jeevan_utsav_brochure_surrender_value
+    examples: |
+      - What is the Guaranteed Surrender Value after 5 years?
+      - How are surrender value factors applied?
+  - intent: lic_jeevan_utsav_brochure_policy_loan
+    examples: |
+      - What is the maximum loan amount for in-force policies?
+      - What is the current loan interest rate?
+  - intent: lic_jeevan_utsav_brochure_revival_process
+    examples: |
+      - How can I revive my lapsed policy?
+      - What interest rate applies to revival?
+  - intent: lic_jeevan_utsav_brochure_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the survival benefit taxable?
+
+  ## 5. LIC_DIGI_CREDIT_BROCHURE
+  - intent: lic_digi_credit_brochure_general_information
+    examples: |
+      - What is LIC Digi Credit Life?
+      - Explain how this plan protects loan repayments.
+  - intent: lic_digi_credit_brochure_eligibility_inquiry
+    examples: |
+      - What is the maximum entry age for this policy?
+      - Can a 50-year-old buy this plan?
+  - intent: lic_digi_credit_brochure_coverage_details
+    examples: |
+      - How does the death benefit reduce over time?
+      - What is the minimum Basic Sum Assured?
+  - intent: lic_digi_credit_brochure_premium_calculation
+    examples: |
+      - What is the premium for ₹50 lakh sum assured at 8% interest for a 30-year-old?
+      - How do Limited Premium payments work?
+  - intent: lic_digi_credit_brochure_death_benefit
+    examples: |
+      - How is Sum Assured on Death determined?
+      - What is the minimum guaranteed death benefit?
+  - intent: lic_digi_credit_brochure_policy_options
+    examples: |
+      - What are the benefits of Single Premium payment?
+      - Can I switch to Limited Premium after choosing Single Premium?
+  - intent: lic_digi_credit_brochure_surrender_and_revival
+    examples: |
+      - What happens if I surrender the policy after 3 years?
+      - How much interest applies to revive a lapsed policy?
+  - intent: lic_digi_credit_brochure_exclusions_and_suicide_clause
+    examples: |
+      - Does this plan cover suicide within the first year?
+      - What percentage of premium is paid for suicide cases?
+  - intent: lic_digi_credit_brochure_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the death benefit taxable?
+  - intent: lic_digi_credit_brochure_grievance_redressal
+    examples: |
+      - How do I file a complaint with LIC?
+      - What is IRDAI’s grievance toll-free number?
+
+  ## 6. LIC_JEEVAN_UMANG_BROCHURE
+  - intent: lic_jeevan_umang_brochure_general_information
+    examples: |
+      - What is LIC Jeevan Umang?
+      - Explain the key features of this whole life insurance plan.
+  - intent: lic_jeevan_umang_brochure_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 50-year-old purchase this plan with a 20-year premium term?
+  - intent: lic_jeevan_umang_brochure_coverage_details
+    examples: |
+      - What is the minimum Basic Sum Assured?
+      - What is the maximum policy term for a 30-year-old?
+  - intent: lic_jeevan_umang_brochure_premium_calculation
+    examples: |
+      - What is the annual premium for ₹10 lakh Sum Assured at age 40?
+      - How do High Sum Assured Rebates work?
+  - intent: lic_jeevan_umang_brochure_survival_benefits
+    examples: |
+      - How much is the annual survival benefit after premium payment ends?
+      - When do survival benefits start?
+  - intent: lic_jeevan_umang_brochure_death_benefits
+    examples: |
+      - How is Sum Assured on Death calculated?
+      - What is the minimum guaranteed death benefit?
+  - intent: lic_jeevan_umang_brochure_maturity_benefits
+    examples: |
+      - What is paid at maturity if I survive till the end of the policy term?
+      - Are bonuses included in maturity benefits?
+  - intent: lic_jeevan_umang_brochure_riders
+    examples: |
+      - What does the Premium Waiver Rider cover?
+      - Can I add the Term Assurance Rider later?
+  - intent: lic_jeevan_umang_brochure_surrender_value
+    examples: |
+      - What is the Guaranteed Surrender Value after 5 years?
+      - How are surrender value factors applied?
+  - intent: lic_jeevan_umang_brochure_policy_loan
+    examples: |
+      - What is the maximum loan amount for in-force policies?
+      - What is the current loan interest rate?
+  - intent: lic_jeevan_umang_brochure_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the survival benefit taxable?
+
+  ## 7. LIC_SINGLE_PREMIUM_ENDOWMENT_BROCHURE
+  - intent: lic_single_premium_endowment_brochure_general_information
+    examples: |
+      - What is LIC Single Premium Endowment Plan?
+      - Explain the key features of this plan.
+  - intent: lic_single_premium_endowment_brochure_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 60-year-old purchase this plan?
+  - intent: lic_single_premium_endowment_brochure_coverage_details
+    examples: |
+      - What is the minimum Basic Sum Assured?
+      - What is the maximum policy term?
+  - intent: lic_single_premium_endowment_brochure_premium_calculation
+    examples: |
+      - What is the single premium for ₹5 lakh Sum Assured at age 40?
+      - How do High Sum Assured Rebates work?
+  - intent: lic_single_premium_endowment_brochure_death_benefits
+    examples: |
+      - How is Sum Assured on Death calculated?
+      - What happens if the policyholder dies before risk commencement?
+  - intent: lic_single_premium_endowment_brochure_maturity_benefits
+    examples: |
+      - What is paid at maturity if I survive till the end of the policy term?
+      - Are bonuses included in maturity benefits?
+  - intent: lic_single_premium_endowment_brochure_riders
+    examples: |
+      - What does the Premium Waiver Rider cover?
+      - Can I add riders after purchasing the plan?
+  - intent: lic_single_premium_endowment_brochure_surrender_value
+    examples: |
+      - What is the Guaranteed Surrender Value after 5 years?
+      - How is Special Surrender Value calculated?
+  - intent: lic_single_premium_endowment_brochure_policy_loan
+    examples: |
+      - What is the maximum loan amount for in-force policies?
+      - What is the current loan interest rate?
+  - intent: lic_single_premium_endowment_brochure_settlement_options
+    examples: |
+      - Can I receive maturity benefits in installments instead of a lump sum?
+      - What are the minimum installment amounts for different modes of payment?
+  - intent: lic_single_premium_endowment_brochure_revival_process
+    examples: |
+      - How can I revive my lapsed policy?
+      - What interest rate applies to revival?
+  - intent: lic_single_premium_endowment_brochure_exclusions
+    examples: |
+      - Does this plan cover suicide within the first year?
+      - Are there any exclusions in this policy?
+  - intent: lic_single_premium_endowment_brochure_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the maturity benefit taxable?
+  - intent: lic_single_premium_endowment_brochure_grievance_redressal
+    examples: |
+      - How can I file a complaint with LIC?
+      - What is IRDAI’s grievance redressal process?
+
+  ## 8. LIC SARAL PENSION
+  - intent: lic_saral_pension_general_plan_information
+    examples: |
+      - What is LIC's Saral Pension plan?
+      - Explain the features of this pension plan.
+  - intent: lic_saral_pension_annuity_options
+    examples: |
+      - What are the annuity options under this plan?
+      - What is the difference between Life Annuity and Joint Life Annuity?
+  - intent: lic_saral_pension_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can an 80-year-old purchase this plan?
+  - intent: lic_saral_pension_coverage_details
+    examples: |
+      - What is the minimum annuity amount for monthly payouts?
+      - Is there a maximum limit on the purchase price?
+  - intent: lic_saral_pension_incentives_and_rebates
+    examples: |
+      - Are there any rebates for online purchases?
+      - How does the incentive for higher purchase price work?
+  - intent: lic_saral_pension_death_benefits
+    examples: |
+      - What happens to my purchase price after my death?
+      - Who receives the benefits under Joint Life Annuity?
+  - intent: lic_saral_pension_surrender_value
+    examples: |
+      - Can I surrender my policy if I am diagnosed with a critical illness?
+      - How much will I get if I surrender my policy?
+  - intent: lic_saral_pension_loan_facility
+    examples: |
+      - Can I take a loan against my policy?
+      - What is the interest rate for loans under this plan?
+  - intent: lic_saral_pension_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the annuity benefit taxable?
+  - intent: lic_saral_pension_free_look_period
+    examples: |
+      - Can I cancel my policy if I am not satisfied?
+      - How much will be refunded during the free look period?
+
+  ## 9. LIC NEW PENSION PLUS
+  - intent: lic_new_pension_plus_general_plan_information
+    examples: |
+      - What is LIC's New Pension Plus?
+      - Explain the features of this pension plan.
+  - intent: lic_new_pension_plus_premium_payment_options
+    examples: |
+      - What are the premium payment options?
+      - Can I pay premiums monthly?
+  - intent: lic_new_pension_plus_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can a 75-year-old purchase this plan?
+  - intent: lic_new_pension_plus_coverage_details
+    examples: |
+      - What is the maximum policy term under this plan?
+      - What investment funds are available?
+  - intent: lic_new_pension_plus_death_benefits
+    examples: |
+      - What happens if the policyholder dies before vesting?
+      - How is the death benefit calculated?
+  - intent: lic_new_pension_plus_vesting_benefits
+    examples: |
+      - What are my options at vesting?
+      - Can I commute part of my pension corpus at vesting?
+  - intent: lic_new_pension_plus_guaranteed_additions
+    examples: |
+      - When are guaranteed additions credited to my fund?
+      - What percentage of premium is added as guaranteed additions?
+  - intent: lic_new_pension_plus_fund_switching
+    examples: |
+      - Can I switch between funds during the policy term?
+      - How many free switches are allowed per year?
+  - intent: lic_new_pension_plus_surrender_and_partial_withdrawals
+    examples: |
+      - Can I surrender my policy after five years?
+      - What are the conditions for partial withdrawals?
+  - intent: lic_new_pension_plus_loan_facility
+    examples: |
+      - Can I take a loan against my policy?
+      - What is the maximum loan amount allowed?
+  - intent: lic_new_pension_plus_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the pension amount taxable after vesting?
+  - intent: lic_new_pension_plus_free_look_period
+    examples: |
+      - Can I cancel my policy within the free look period?
+      - How much will be refunded if I cancel my policy within this period?
+  - intent: lic_new_pension_plus_grievance_redressal
+    examples: |
+      - How can I file a complaint with LIC?
+      - What is IRDAI’s grievance redressal process?
+
+  ## 10. LIC NEW JEEVAN SHANTI
+  - intent: lic_new_jeevan_shanti_general_plan_information
+    examples: |
+      - What is LIC's New Jeevan Shanti plan?
+      - Explain the features of this deferred annuity plan.
+  - intent: lic_new_jeevan_shanti_annuity_options
+    examples: |
+      - What are the annuity options under this plan?
+      - Can I choose a joint life annuity option?
+  - intent: lic_new_jeevan_shanti_eligibility_inquiry
+    examples: |
+      - What is the minimum purchase price for this policy?
+      - Can an 80-year-old purchase this plan?
+  - intent: lic_new_jeevan_shanti_coverage_details
+    examples: |
+      - What is the minimum deferment period?
+      - How is the death benefit calculated under this plan?
+  - intent: lic_new_jeevan_shanti_death_benefits
+    examples: |
+      - What happens to my purchase price after my death?
+      - Who receives the benefits under joint life annuity?
+  - intent: lic_new_jeevan_shanti_incentives_and_rebates
+    examples: |
+      - Are there any rebates for higher purchase price?
+      - How does the incentive for online purchases work?
+  - intent: lic_new_jeevan_shanti_surrender_value
+    examples: |
+      - Can I surrender my policy during the deferment period?
+      - How much will I get if I surrender my policy after five years?
+  - intent: lic_new_jeevan_shanti_loan_facility
+    examples: |
+      - Can I take a loan against my policy?
+      - What is the maximum loan amount allowed?
+  - intent: lic_new_jeevan_shanti_payment_modes
+    examples: |
+      - Can I receive monthly annuity payments?
+      - What is the reduction in annuity rate for quarterly payments?
+  - intent: lic_new_jeevan_shanti_free_look_period
+    examples: |
+      - Can I cancel my policy if I am not satisfied?
+      - How much will be refunded during the free look period?
+  - intent: lic_new_jeevan_shanti_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the annuity amount taxable after deferment?
+
+  ## 11. LIC JEEVAN AKSHAY VII BROCHURE
+  - intent: lic_jeevan_akshay_vii_general_plan_information
+    examples: |
+      - What is LIC Jeevan Akshay-VII?
+      - Explain the features of this immediate annuity plan.
+  - intent: lic_jeevan_akshay_vii_annuity_options
+    examples: |
+      - What are the annuity options under LIC Jeevan Akshay-VII?
+      - Can I choose a joint life annuity with a return of purchase price?
+  - intent: lic_jeevan_akshay_vii_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I purchase this plan if I am 85 years old?
+  - intent: lic_jeevan_akshay_vii_payment_modes
+    examples: |
+      - Can I receive my annuity monthly?
+      - What payment modes are available under this plan?
+  - intent: lic_jeevan_akshay_vii_death_benefits
+    examples: |
+      - What happens to my purchase price after my death?
+      - Who receives the death benefit under a joint life annuity?
+  - intent: lic_jeevan_akshay_vii_surrender_value
+    examples: |
+      - Can I surrender my policy during the term?
+      - What is the Guaranteed Surrender Value (GSV) for this plan?
+  - intent: lic_jeevan_akshay_vii_loan_facility
+    examples: |
+      - Can I take a loan against this policy after three months?
+      - What is the maximum loan amount allowed under this plan?
+  - intent: lic_jeevan_akshay_vii_incentives
+    examples: |
+      - Are there any incentives for higher purchase prices?
+      - How much incentive is offered for online purchases?
+  - intent: lic_jeevan_akshay_vii_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the annuity amount taxable under this plan?
+
+  ## 12. MAX-LIFE SECURE EARNINGS & WELLNESS ADVANTAGE PLAN
+  - intent: maxlife_secure_earnings_wellness_general_plan_information
+    examples: |
+      - What is Max Life Secure Earnings & Wellness Advantage Plan?
+      - Explain the features of this plan.
+  - intent: maxlife_secure_earnings_wellness_variant_selection
+    examples: |
+      - What is the difference between Elite and Lite variants?
+      - Which variant offers health care benefits?
+  - intent: maxlife_secure_earnings_wellness_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I buy this plan if I am 50 years old?
+  - intent: maxlife_secure_earnings_wellness_premium_payment_options
+    examples: |
+      - What are the available premium payment terms?
+      - Can I pay premiums monthly?
+  - intent: maxlife_secure_earnings_wellness_coverage_details
+    examples: |
+      - What is the Fixed Daily Hospitalization Cash Benefit (FDHC)?
+      - How is the death benefit calculated under this plan?
+  - intent: maxlife_secure_earnings_wellness_maturity_benefits
+    examples: |
+      - What is included in the maturity benefit for Elite Variant?
+      - Does Lite Variant include Savings Boosters?
+  - intent: maxlife_secure_earnings_wellness_health_care_benefit_option
+    examples: |
+      - How does the Health Care Benefit Option work in Elite Variant?
+      - Can I withdraw funds during emergencies under this plan?
+  - intent: maxlife_secure_earnings_wellness_wellness_program
+    examples: |
+      - What is the wellness booster percentage for a healthy lifestyle?
+      - How do I earn reward points through the wellness program?
+  - intent: maxlife_secure_earnings_wellness_surrender_value
+    examples: |
+      - When can I surrender my policy?
+      - What is the Guaranteed Surrender Value (GSV) after five years?
+  - intent: maxlife_secure_earnings_wellness_loan_facility
+    examples: |
+      - Can I take a loan against my policy after three years?
+      - What is the maximum loan amount allowed under this plan?
+  - intent: maxlife_secure_earnings_wellness_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the maturity benefit taxable under this plan?
+  - intent: maxlife_secure_earnings_wellness_free_look_period
+    examples: |
+      - Can I cancel my policy within the free look period?
+      - How much will be refunded if I cancel my policy within this period?
+  - intent: maxlife_secure_earnings_wellness_discounts
+    examples: |
+      - What discounts are available for enrolling in the wellness program?
+      - Is there a discount for transgender customers?
+
+  ## 13. MAX-LIFE MONTHLY INCOME ADVANTAGE PLAN
+  - intent: maxlife_monthly_income_general_plan_information
+    examples: |
+      - What is Max Life Monthly Income Advantage Plan?
+      - Explain the features of this plan.
+  - intent: maxlife_monthly_income_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I buy this plan if I am 50 years old?
+  - intent: maxlife_monthly_income_premium_payment_options
+    examples: |
+      - What are the available premium payment terms?
+      - Can I pay premiums monthly?
+  - intent: maxlife_monthly_income_income_benefits
+    examples: |
+      - How much monthly income will I receive after the premium payment term?
+      - What is the terminal bonus included in the income payout?
+  - intent: maxlife_monthly_income_maturity_benefits
+    examples: |
+      - What is included in the maturity benefit?
+      - Does this plan offer guaranteed maturity benefits?
+  - intent: maxlife_monthly_income_death_benefits
+    examples: |
+      - What happens if the policyholder dies during the premium payment term?
+      - Who receives the death benefit under this plan?
+  - intent: maxlife_monthly_income_surrender_value
+    examples: |
+      - When can I surrender my policy?
+      - What is the Guaranteed Surrender Value (GSV) after five years?
+  - intent: maxlife_monthly_income_loan_facility
+    examples: |
+      - Can I take a loan against my policy after three years?
+      - What is the maximum loan amount allowed under this plan?
+  - intent: maxlife_monthly_income_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the monthly income taxable under this plan?
+  - intent: maxlife_monthly_income_free_look_period
+    examples: |
+      - Can I cancel my policy within the free look period?
+      - How much will be refunded if I cancel my policy within this period?
+
+  ## 14. SMART TERM PLAN
+  - intent: smart_term_general_plan_information
+    examples: |
+      - What is Max Life Smart Term Plan?
+      - Explain the key features of this term insurance plan.
+  - intent: smart_term_sum_assured_options
+    examples: |
+      - What is the Level Sum Assured option?
+      - How does the Increasing Sum Assured option work?
+  - intent: smart_term_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I buy this plan if I am 50 years old?
+  - intent: smart_term_premium_payment_details
+    examples: |
+      - What is the annual premium for a ₹1 crore sum assured?
+      - Can I pay premiums monthly?
+  - intent: smart_term_death_benefit_payout_options
+    examples: |
+      - What are the settlement options for death benefits?
+      - Can my nominee receive both a lump sum and monthly income?
+  - intent: smart_term_policy_term_options
+    examples: |
+      - What is the minimum policy term under this plan?
+      - Can I choose a policy term of 25 years?
+  - intent: smart_term_inflation_protection
+    examples: |
+      - How does this plan protect against inflation?
+      - Does my sum assured increase every year without increasing premiums?
+  - intent: smart_term_surrender_value
+    examples: |
+      - Can I surrender my policy during the term?
+      - Is there any surrender value for this plan?
+  - intent: smart_term_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the death benefit taxable under this plan?
+
+  ## 15. SUPER TERM PLAN
+  - intent: super_term_general_plan_information
+    examples: |
+      - What is Max Life Super Term Plan?
+      - Explain the key features of this term insurance plan.
+  - intent: super_term_sum_assured_options
+    examples: |
+      - What is the Level Sum Assured option?
+      - How does the Increasing Sum Assured option work?
+  - intent: super_term_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I buy this plan if I am 50 years old?
+  - intent: super_term_premium_payment_details
+    examples: |
+      - What is the annual premium for a ₹1 crore sum assured?
+      - Can I pay premiums monthly?
+  - intent: super_term_death_benefit_payout_options
+    examples: |
+      - What are the settlement options for death benefits?
+      - Can my nominee receive both a lump sum and monthly income?
+  - intent: super_term_policy_term_options
+    examples: |
+      - What is the minimum policy term under this plan?
+      - Can I choose a policy term of 25 years?
+  - intent: super_term_inflation_protection
+    examples: |
+      - How does this plan protect against inflation?
+      - Does my sum assured increase every year without increasing premiums?
+  - intent: super_term_surrender_value
+    examples: |
+      - Can I surrender my policy during the term?
+      - Is there any surrender value for this plan?
+  - intent: super_term_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the death benefit taxable under this plan?
+
+  ## 16. MAX LIFE SMART GUARANTEED PENSION PLAN
+  - intent: maxlife_smart_guaranteed_general_plan_information
+    examples: |
+      - What is Max Life Smart Guaranteed Pension Plan?
+      - Explain the features of this pension plan.
+  - intent: maxlife_smart_guaranteed_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I purchase this plan if I am 85 years old?
+  - intent: maxlife_smart_guaranteed_annuity_options
+    examples: |
+      - What are the annuity options under this plan?
+      - Can I choose a joint life annuity with death benefit?
+  - intent: maxlife_smart_guaranteed_payment_modes
+    examples: |
+      - Can I receive my annuity monthly?
+      - What are the payment modes available under this plan?
+  - intent: maxlife_smart_guaranteed_death_benefits
+    examples: |
+      - What happens to my purchase price after my death?
+      - Who receives the death benefit under a joint life annuity?
+  - intent: maxlife_smart_guaranteed_surrender_value
+    examples: |
+      - Can I surrender my policy during the term?
+      - What is the Guaranteed Surrender Value (GSV) for this plan?
+  - intent: maxlife_smart_guaranteed_top_up_option
+    examples: |
+      - Can I increase my annuity amount with a top-up premium?
+      - What is the minimum top-up amount allowed under this plan?
+  - intent: maxlife_smart_guaranteed_advance_annuity_option
+    examples: |
+      - How does the advance annuity option work?
+      - Can I withdraw five years of annuities in advance?
+  - intent: maxlife_smart_guaranteed_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the annuity amount taxable under this plan?
+  - intent: maxlife_smart_guaranteed_free_look_period
+    examples: |
+      - Can I cancel my policy within the free look period?
+      - How much will be refunded if I cancel my policy within this period?
+
+  ## 17. SWAG PENSION PROSPECTUS
+  - intent: swag_pension_general_plan_information
+    examples: |
+      - What is Max Life Smart Wealth Annuity Guaranteed Pension Plan?
+      - Explain the features of this pension plan.
+  - intent: swag_pension_annuity_options
+    examples: |
+      - What annuity options are available under this plan?
+      - Can I choose a joint life annuity with death benefit?
+  - intent: swag_pension_eligibility_inquiry
+    examples: |
+      - What is the minimum age to buy this policy?
+      - Can I purchase this plan if I am 85 years old?
+  - intent: swag_pension_premium_payment_options
+    examples: |
+      - What are the premium payment modes available?
+      - Can I pay premiums monthly for a deferred annuity?
+  - intent: swag_pension_annuity_payout_modes
+    examples: |
+      - Can I receive my annuity monthly?
+      - What is the deferment period for a single premium deferred annuity?
+  - intent: swag_pension_death_benefits
+    examples: |
+      - What happens to my purchase price after my death?
+      - Who receives the death benefit under a joint life annuity?
+  - intent: swag_pension_surrender_value
+    examples: |
+      - Can I surrender my policy during the deferment period?
+      - What is the Guaranteed Surrender Value (GSV) for this plan?
+  - intent: swag_pension_advance_annuity_option
+    examples: |
+      - How does the advance annuity option work?
+      - Can I withdraw five years of annuities in advance?
+  - intent: swag_pension_top_up_option
+    examples: |
+      - Can I increase my annuity amount with a top-up premium?
+      - What is the minimum top-up amount allowed under this plan?
+  - intent: swag_pension_inflation_protection
+    examples: |
+      - How does the increasing annuity option work?
+      - Can my annuity increase every year without additional premiums?
+  - intent: swag_pension_tax_implications
+    examples: |
+      - Are premiums tax-deductible under Section 80C?
+      - Is the annuity amount taxable under this plan?
+  - intent: swag_pension_free_look_period
+    examples: |
+      - Can I cancel my policy within the free look period?
+      - How much will be refunded if I cancel my policy within this period?
+
+
+
+

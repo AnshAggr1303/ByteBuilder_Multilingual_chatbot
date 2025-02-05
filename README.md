@@ -41,4 +41,4 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 - **Integrate a knowledge graph:**  
   Use a knowledge graph to provide structured and context-aware responses.
 
-  ---
+---

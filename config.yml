@@ -1,0 +1,49 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# The assistant project unique identifier
+# This default value must be replaced with a unique assistant name within your deployment
+assistant_id: 20250203-192939-medium-generator
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+# Tokenizer to split the text into words
+  - name: WhitespaceTokenizer
+
+  # Featurizers to extract features from the text
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "word"
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+
+  # Intent classifier and entity extractor
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true
+
+  # Maps synonyms for entities (e.g., "₹" -> "INR")
+  - name: EntitySynonymMapper
+
+  # Handles retrieval intents (e.g., FAQs)
+  - name: ResponseSelector
+    epochs: 100
+
+policies:
+  # Rule-based policy for handling predefined rules (e.g., FAQ responses)
+  - name: RulePolicy
+
+  # Memorization policy to remember exact matches from training stories
+  - name: MemoizationPolicy
+
+  # Transformer-based policy for general dialogue management
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100

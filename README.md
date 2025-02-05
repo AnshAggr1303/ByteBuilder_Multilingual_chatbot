@@ -31,6 +31,67 @@ This project is a **multilingual chatbot** that helps users find **health-relate
 
 ---
 
+## 📂 Project Structure
+
+/Quark_final
+│
+├── bot.py                      # Main file to run the Telegram bot
+├── bloom_response.py           # Handles response generation using Bloom-560m
+├── translator.py               # Handles language detection and translation
+├── vector_store.py             # Manages FAISS-based document retrieval
+├── index_documents.py          # Indexes health-related documents using TF-IDF and FAISS
+├── search.py                   # Test script to manually search FAISS
+│
+├── domain.yml                  # Defines intents, entities, and responses for Rasa
+├── config.yml                  # Rasa configuration for pipelines
+├── nlu.yml                     # Training data for Rasa NLU
+│
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
+
+---
+
+## 📋 Requirements
+- **Python**: 3.8+
+- **Pip**: Latest version
+- **Rasa**: Installed in a virtual environment
+- The required Python dependencies are listed in **`requirements.txt`**.
+
+---
+
+## 🛠️ Setup Instructions
+1. Clone the Repository
+- git clone https://github.com/your-username/health-chatbot.git
+- cd health-chatbot
+
+2. Set Up Virtual Environments
+- For Bloom LLM and FAISS:
+
+- Create separate virtual environments for Bloom , FAISS , RASA.
+
+3. Train the Rasa NLU Model
+- Activate the Rasa virtual environment and train the model using the provided NLU data.
+
+4. Index the Health Documents Using TF-IDF and FAISS
+- Activate the FAISS environment and run index_documents.py to index the documents:
+
+5. Start the Rasa NLU Server and Run the Telegram Bot
+   1. Activate the Rasa virtual environment
+   2. Start the Rasa server with the API enabled
+
+5.2 Run the Telegram Bot
+   1. Open a new terminal and navigate to the project directory
+   2. Activate the Bloom virtual environment
+   3. Run the bot
+
+---
+
+## 🛠️ How to Interact with the Bot
+- Open Telegram and search for your bot using the Bot Token provided by BotFather.
+- Start interacting with the bot by sending health-related queries.
+  
+---
+
 ## 🌟 Future Enhancements
 - **Fine-tune Bloom or use a larger model:**  
   Experiment with Bloom-1B or fine-tune the existing model for more specific health-related answers.

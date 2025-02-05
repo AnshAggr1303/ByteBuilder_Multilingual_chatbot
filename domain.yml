@@ -1,0 +1,642 @@
+version: "3.1"
+
+intents:
+  - lic_jeevan_arogya_brochure_general_information
+  - lic_jeevan_arogya_brochure_eligibility_inquiry
+  - lic_jeevan_arogya_brochure_coverage_details
+  - lic_jeevan_arogya_brochure_benefits_inquiry
+  - lic_jeevan_arogya_brochure_premium_calculation
+  - lic_jeevan_arogya_brochure_claim_process
+  - lic_jeevan_arogya_brochure_waiting_periods_exclusions
+  - lic_jeevan_arogya_brochure_payment_options_discounts
+  - lic_jeevan_arogya_brochure_policy_customization
+  - lic_jeevan_arogya_brochure_policy_termination_revival
+  - lic_jeevan_arogya_brochure_contact_information
+
+  - lic_digiterm_general_information
+  - lic_digiterm_eligibility_inquiry
+  - lic_digiterm_coverage_details
+  - lic_digiterm_premium_calculation
+  - lic_digiterm_death_benefit_options
+  - lic_digiterm_payment_options
+  - lic_digiterm_discounts_and_rebates
+  - lic_digiterm_claim_process
+  - lic_digiterm_policy_revival
+  - lic_digiterm_exclusions
+  - lic_digiterm_grievance_redressal
+
+  - lic_new_jeevan_amar_general_information
+  - lic_new_jeevan_amar_eligibility_inquiry
+  - lic_new_jeevan_amar_coverage_details
+  - lic_new_jeevan_amar_premium_calculation
+  - lic_new_jeevan_amar_death_benefit_options
+  - lic_new_jeevan_amar_payment_options
+  - lic_new_jeevan_amar_discounts_and_rebates
+  - lic_new_jeevan_amar_claim_process
+  - lic_new_jeevan_amar_policy_revival
+  - lic_new_jeevan_amar_exclusions
+  - lic_new_jeevan_amar_grievance_redressal
+
+  - lic_jeevan_utsav_brochure_general_information
+  - lic_jeevan_utsav_brochure_eligibility_inquiry
+  - lic_jeevan_utsav_brochure_coverage_details
+  - lic_jeevan_utsav_brochure_premium_calculation
+  - lic_jeevan_utsav_brochure_death_benefit
+  - lic_jeevan_utsav_brochure_survival_benefit_options
+  - lic_jeevan_utsav_brochure_riders
+  - lic_jeevan_utsav_brochure_surrender_value
+  - lic_jeevan_utsav_brochure_policy_loan
+  - lic_jeevan_utsav_brochure_revival_process
+  - lic_jeevan_utsav_brochure_tax_implications
+
+  - lic_digi_credit_brochure_general_information
+  - lic_digi_credit_brochure_eligibility_inquiry
+  - lic_digi_credit_brochure_coverage_details
+  - lic_digi_credit_brochure_premium_calculation
+  - lic_digi_credit_brochure_death_benefit
+  - lic_digi_credit_brochure_policy_options
+  - lic_digi_credit_brochure_surrender_and_revival
+  - lic_digi_credit_brochure_exclusions_and_suicide_clause
+  - lic_digi_credit_brochure_tax_implications
+  - lic_digi_credit_brochure_grievance_redressal
+
+  - lic_jeevan_umang_brochure_general_information
+  - lic_jeevan_umang_brochure_eligibility_inquiry
+  - lic_jeevan_umang_brochure_coverage_details
+  - lic_jeevan_umang_brochure_premium_calculation
+  - lic_jeevan_umang_brochure_survival_benefits
+  - lic_jeevan_umang_brochure_death_benefits
+  - lic_jeevan_umang_brochure_maturity_benefits
+  - lic_jeevan_umang_brochure_riders
+  - lic_jeevan_umang_brochure_surrender_value
+  - lic_jeevan_umang_brochure_policy_loan
+  - lic_jeevan_umang_brochure_tax_implications
+
+  - lic_single_premium_endowment_brochure_general_information
+  - lic_single_premium_endowment_brochure_eligibility_inquiry
+  - lic_single_premium_endowment_brochure_coverage_details
+  - lic_single_premium_endowment_brochure_premium_calculation
+  - lic_single_premium_endowment_brochure_death_benefits
+  - lic_single_premium_endowment_brochure_maturity_benefits
+  - lic_single_premium_endowment_brochure_riders
+  - lic_single_premium_endowment_brochure_surrender_value
+  - lic_single_premium_endowment_brochure_policy_loan
+  - lic_single_premium_endowment_brochure_settlement_options
+  - lic_single_premium_endowment_brochure_revival_process
+  - lic_single_premium_endowment_brochure_exclusions
+  - lic_single_premium_endowment_brochure_tax_implications
+  - lic_single_premium_endowment_brochure_grievance_redressal
+
+  - lic_saral_pension_general_plan_information
+  - lic_saral_pension_annuity_options
+  - lic_saral_pension_eligibility_inquiry
+  - lic_saral_pension_coverage_details
+  - lic_saral_pension_incentives_and_rebates
+  - lic_saral_pension_death_benefits
+  - lic_saral_pension_surrender_value
+  - lic_saral_pension_loan_facility
+  - lic_saral_pension_tax_implications
+  - lic_saral_pension_free_look_period
+
+  - lic_new_pension_plus_general_plan_information
+  - lic_new_pension_plus_premium_payment_options
+  - lic_new_pension_plus_eligibility_inquiry
+  - lic_new_pension_plus_coverage_details
+  - lic_new_pension_plus_death_benefits
+  - lic_new_pension_plus_vesting_benefits
+  - lic_new_pension_plus_guaranteed_additions
+  - lic_new_pension_plus_fund_switching
+  - lic_new_pension_plus_surrender_and_partial_withdrawals
+  - lic_new_pension_plus_loan_facility
+  - lic_new_pension_plus_tax_implications
+  - lic_new_pension_plus_free_look_period
+  - lic_new_pension_plus_grievance_redressal
+
+  - lic_new_jeevan_shanti_general_plan_information
+  - lic_new_jeevan_shanti_annuity_options
+  - lic_new_jeevan_shanti_eligibility_inquiry
+  - lic_new_jeevan_shanti_coverage_details
+  - lic_new_jeevan_shanti_death_benefits
+  - lic_new_jeevan_shanti_incentives_and_rebates
+  - lic_new_jeevan_shanti_surrender_value
+  - lic_new_jeevan_shanti_loan_facility
+  - lic_new_jeevan_shanti_payment_modes
+  - lic_new_jeevan_shanti_free_look_period
+  - lic_new_jeevan_shanti_tax_implications
+
+  - lic_jeevan_akshay_vii_general_plan_information
+  - lic_jeevan_akshay_vii_annuity_options
+  - lic_jeevan_akshay_vii_eligibility_inquiry
+  - lic_jeevan_akshay_vii_payment_modes
+  - lic_jeevan_akshay_vii_death_benefits
+  - lic_jeevan_akshay_vii_surrender_value
+  - lic_jeevan_akshay_vii_loan_facility
+  - lic_jeevan_akshay_vii_incentives
+  - lic_jeevan_akshay_vii_tax_implications
+
+  - maxlife_secure_earnings_wellness_general_plan_information
+  - maxlife_secure_earnings_wellness_variant_selection
+  - maxlife_secure_earnings_wellness_eligibility_inquiry
+  - maxlife_secure_earnings_wellness_premium_payment_options
+  - maxlife_secure_earnings_wellness_coverage_details
+  - maxlife_secure_earnings_wellness_maturity_benefits
+  - maxlife_secure_earnings_wellness_health_care_benefit_option
+  - maxlife_secure_earnings_wellness_wellness_program
+  - maxlife_secure_earnings_wellness_surrender_value
+  - maxlife_secure_earnings_wellness_loan_facility
+  - maxlife_secure_earnings_wellness_tax_implications
+  - maxlife_secure_earnings_wellness_free_look_period
+  - maxlife_secure_earnings_wellness_discounts
+
+  - maxlife_monthly_income_general_plan_information
+  - maxlife_monthly_income_eligibility_inquiry
+  - maxlife_monthly_income_premium_payment_options
+  - maxlife_monthly_income_income_benefits
+  - maxlife_monthly_income_maturity_benefits
+  - maxlife_monthly_income_death_benefits
+  - maxlife_monthly_income_surrender_value
+  - maxlife_monthly_income_loan_facility
+  - maxlife_monthly_income_tax_implications
+  - maxlife_monthly_income_free_look_period
+
+  - smart_term_general_plan_information
+  - smart_term_sum_assured_options
+  - smart_term_eligibility_inquiry
+  - smart_term_premium_payment_details
+  - smart_term_death_benefit_payout_options
+  - smart_term_policy_term_options
+  - smart_term_inflation_protection
+  - smart_term_surrender_value
+  - smart_term_tax_implications
+
+  - super_term_general_plan_information
+  - super_term_sum_assured_options
+  - super_term_eligibility_inquiry
+  - super_term_premium_payment_details
+  - super_term_death_benefit_payout_options
+  - super_term_policy_term_options
+  - super_term_inflation_protection
+  - super_term_surrender_value
+  - super_term_tax_implications
+
+  - maxlife_smart_guaranteed_general_plan_information
+  - maxlife_smart_guaranteed_eligibility_inquiry
+  - maxlife_smart_guaranteed_annuity_options
+  - maxlife_smart_guaranteed_payment_modes
+  - maxlife_smart_guaranteed_death_benefits
+  - maxlife_smart_guaranteed_surrender_value
+  - maxlife_smart_guaranteed_top_up_option
+  - maxlife_smart_guaranteed_advance_annuity_option
+  - maxlife_smart_guaranteed_tax_implications
+  - maxlife_smart_guaranteed_free_look_period
+
+  - swag_pension_general_plan_information
+  - swag_pension_annuity_options
+  - swag_pension_eligibility_inquiry
+  - swag_pension_premium_payment_options
+  - swag_pension_annuity_payout_modes
+  - swag_pension_death_benefits
+  - swag_pension_surrender_value
+  - swag_pension_advance_annuity_option
+  - swag_pension_top_up_option
+  - swag_pension_inflation_protection
+  - swag_pension_tax_implications
+  - swag_pension_free_look_period
+
+entities:
+  - plan_name
+  - coverage_amounts
+  - premium_details
+  - insured_types
+  - benefits
+  - eligibility_criteria
+  - waiting_periods
+  - exclusions
+  - death_benefit_options
+  - plan_structure
+  - sum_assured_details
+  - survival_benefits
+  - death_benefit_calculation
+  - riders_details
+  - annuity_payments
+  - incentives_details
+  - loan_terms
+  - vesting_benefits
+  - guaranteed_additions
+  - fund_switching_details
+  - surrender_value_factors
+  - policy_term_options
+  - inflation_protection_options
+  - top_up_option
+  - advance_annuity_option
+  - modal_factors
+  - grievance_redressal_details
+  - payment_modes
+  - terminal_bonus_details
+  - income_benefits_details
+
+responses:
+  # LIC Jeevan Arogya Brochure Responses
+  utter_lic_jeevan_arogya_brochure_general_information:
+    - text: "LIC Jeevan Arogya is a comprehensive health plan offering Hospital Cash Benefit, Major Surgical Benefit, and other features tailored to your needs."
+  utter_lic_jeevan_arogya_brochure_eligibility_inquiry:
+    - text: "Eligibility criteria are as follows: Self/Spouse (18–65 years), Parents/Parents-in-law (18–75 years), and Children (91 days–17 years)."
+  utter_lic_jeevan_arogya_brochure_coverage_details:
+    - text: "This plan provides daily Hospital Cash Benefits ranging from ₹1000/day to ₹4000/day, and Major Surgical Benefits calculated as up to ₹4 lakh."
+  utter_lic_jeevan_arogya_brochure_benefits_inquiry:
+    - text: "Key benefits include Hospital Cash Benefit, Major Surgical Benefit, Day Care Procedure Benefit, Ambulance Benefit, and Premium Waiver Benefit."
+  utter_lic_jeevan_arogya_brochure_premium_calculation:
+    - text: "Premiums depend on age, gender, and coverage level. For example, a ₹2000/day benefit for a male aged 30 costs approximately ₹2242.90 annually."
+  utter_lic_jeevan_arogya_brochure_claim_process:
+    - text: "To claim benefits, submit the required claim form along with medical bills and other relevant documents."
+  utter_lic_jeevan_arogya_brochure_waiting_periods_exclusions:
+    - text: "The waiting period is 90 days from policy inception. Pre-existing conditions and cosmetic surgeries are generally excluded unless specified."
+  utter_lic_jeevan_arogya_brochure_payment_options_discounts:
+    - text: "Premiums can be paid yearly or half-yearly. Discounts include rebates on higher daily benefits."
+  utter_lic_jeevan_arogya_brochure_policy_customization:
+    - text: "You can customize your policy by adding family members or riders such as an Accidental Death Rider or Term Assurance Rider."
+  utter_lic_jeevan_arogya_brochure_policy_termination_revival:
+    - text: "If you miss a premium, your policy may lapse. It can be revived within five years by paying all due premiums along with interest."
+  utter_lic_jeevan_arogya_brochure_contact_information:
+    - text: "For assistance, visit www.licindia.in or send your city name to SMS '566773'."
+
+  # LIC Digi Term Responses
+  utter_lic_digiterm_general_information:
+    - text: "LIC Digi Term is a flexible term insurance plan offering both Level and Increasing Sum Assured options."
+  utter_lic_digiterm_eligibility_inquiry:
+    - text: "Eligibility for LIC Digi Term requires a minimum entry age of 18 years, with a maximum determined by the chosen policy term."
+  utter_lic_digiterm_coverage_details:
+    - text: "The minimum sum assured under LIC Digi Term is ₹50 lakh, and policy terms can extend up to 40 years."
+  utter_lic_digiterm_premium_calculation:
+    - text: "Premiums are calculated based on age, gender, smoking status, and sum assured. For example, a non-smoking 30-year-old male with a ₹1 crore cover might pay around ₹12,000 annually."
+  utter_lic_digiterm_death_benefit_options:
+    - text: "The Level Sum Assured option offers a fixed benefit; the Increasing option boosts coverage by 10% per year from Year 6 to Year 15."
+  utter_lic_digiterm_payment_options:
+    - text: "You can choose to pay premiums yearly, half-yearly, or via a one-time single premium."
+  utter_lic_digiterm_discounts_and_rebates:
+    - text: "High sum assured rebates are available for coverage above ₹1 crore, and women may receive lower premiums."
+  utter_lic_digiterm_claim_process:
+    - text: "Submit the required claim forms and supporting documents to claim benefits; options exist to receive installments over up to 15 years."
+  utter_lic_digiterm_policy_revival:
+    - text: "Lapsed policies can generally be revived within five years by paying overdue premiums plus interest."
+  utter_lic_digiterm_exclusions:
+    - text: "Exclusions include suicide within one year, where only up to 80% of premiums may be refunded."
+  utter_lic_digiterm_grievance_redressal:
+    - text: "For grievances, visit www.licindia.in, call the toll-free number '155255', or email co_complaints@licindia.com."
+
+  # LIC New Jeevan Amar Responses
+  utter_lic_new_jeevan_amar_general_information:
+    - text: "LIC New Jeevan Amar is a term insurance plan offering flexible death benefit options with both Level and Increasing Sum Assured choices."
+  utter_lic_new_jeevan_amar_eligibility_inquiry:
+    - text: "This plan requires a minimum entry age of 18 years and allows purchase by applicants up to 60 years, with maturity up to 80 years."
+  utter_lic_new_jeevan_amar_coverage_details:
+    - text: "Minimum sum assured is typically around ₹25 lakh, with policy terms ranging from 10 to 40 years, subject to underwriting."
+  utter_lic_new_jeevan_amar_premium_calculation:
+    - text: "For instance, a non-smoking 30-year-old male with a ₹50 lakh cover may pay approximately ₹12,000 annually; premiums vary based on various factors."
+  utter_lic_new_jeevan_amar_death_benefit_options:
+    - text: "Choose Level Sum Assured for a fixed benefit, or Increasing Sum Assured where the amount increases annually by 10% (from Year 6 to 15)."
+  utter_lic_new_jeevan_amar_payment_options:
+    - text: "Premiums can be paid on an annual, half-yearly, or single premium basis; Limited Premium modes are available for shorter durations."
+  utter_lic_new_jeevan_amar_discounts_and_rebates:
+    - text: "High sum assured rebates apply for covers above ₹50 lakh, and special rates may be available for women."
+  utter_lic_new_jeevan_amar_claim_process:
+    - text: "To claim benefits, your nominee should submit all necessary documents, including claim forms and identity proof, as per guidelines."
+  utter_lic_new_jeevan_amar_policy_revival:
+    - text: "If your policy lapses, you can revive it within five years by paying all due premiums with interest."
+  utter_lic_new_jeevan_amar_exclusions:
+    - text: "Exclusions include suicide within one year of policy inception, where only up to 80% of premiums are refunded."
+  utter_lic_new_jeevan_amar_grievance_redressal:
+    - text: "For any complaint, visit www.licindia.in or call the toll-free number '155255'."
+
+  # LIC Jeevan Utsav Brochure Responses
+  utter_lic_jeevan_utsav_brochure_general_information:
+    - text: "LIC Jeevan Utsav offers a whole life insurance solution with options for Regular or Flexi Income Benefits along with guaranteed additions."
+  utter_lic_jeevan_utsav_brochure_eligibility_inquiry:
+    - text: "Eligibility for this plan starts from as early as 30 days (for a 16-year premium term) up to 65 years of age."
+  utter_lic_jeevan_utsav_brochure_coverage_details:
+    - text: "The minimum Basic Sum Assured is ₹5,00,000, and the Premium Paying Term can range from 5 to 16 years."
+  utter_lic_jeevan_utsav_brochure_premium_calculation:
+    - text: "Premiums are calculated based on age, sum assured, and payment frequency, with modal loadings of 0% for yearly, 1.75% for half-yearly, 2.5% for quarterly, and 3.25% for monthly."
+  utter_lic_jeevan_utsav_brochure_death_benefit:
+    - text: "The death benefit is the higher of the Basic Sum Assured or seven times the annualized premium, with a minimum guarantee of 105% of premiums paid."
+  utter_lic_jeevan_utsav_brochure_survival_benefit_options:
+    - text: "Option I provides a Regular Income Benefit (10% of Basic Sum Assured annually for life) while Option II defers the Flexi Income Benefit at an interest rate of 5.5% per annum."
+  utter_lic_jeevan_utsav_brochure_riders:
+    - text: "Optional riders include Accidental Death Rider, Premium Waiver Rider, and Critical Illness Rider, available at inception or as per eligibility."
+  utter_lic_jeevan_utsav_brochure_surrender_value:
+    - text: "Guaranteed Surrender Value is calculated based on policy year and accrued Guaranteed Additions (approximately 50% of total premiums paid by Year 5)."
+  utter_lic_jeevan_utsav_brochure_policy_loan:
+    - text: "Loans up to 75% of the surrender value are available for in-force policies, with current interest rates around 9.5% per annum (compounded half-yearly)."
+  utter_lic_jeevan_utsav_brochure_revival_process:
+    - text: "Lapsed policies may be revived within five years from the first unpaid premium by paying all due premiums plus applicable interest."
+  utter_lic_jeevan_utsav_brochure_tax_implications:
+    - text: "Premiums are eligible for tax deductions under Section 80C, while survival benefits might be taxable as per prevailing tax laws."
+
+  # LIC Digi Credit Brochure Responses
+  utter_lic_digi_credit_brochure_general_information:
+    - text: "LIC Digi Credit Life is a decreasing term assurance plan designed to protect outstanding loan amounts in case of an untimely demise."
+  utter_lic_digi_credit_brochure_eligibility_inquiry:
+    - text: "Eligibility requires an entry age of at least 18 years and typically a maximum age of 45 years, depending on the chosen premium mode."
+  utter_lic_digi_credit_brochure_coverage_details:
+    - text: "The minimum Basic Sum Assured is ₹50 lakh, and the death benefit decreases over time according to the risk cover schedule."
+  utter_lic_digi_credit_brochure_premium_calculation:
+    - text: "For example, a ₹50 lakh sum assured at an 8% interest rate for a 30-year-old may cost approximately ₹11,000 annually under a Single Premium mode."
+  utter_lic_digi_credit_brochure_death_benefit:
+    - text: "For Limited Premium, the death benefit is the higher of (1) 105% of premiums paid or (2) the risk cover value; for Single Premium, it matches the risk cover schedule."
+  utter_lic_digi_credit_brochure_policy_options:
+    - text: "This plan is available as either Single Premium or Limited Premium; note that switching modes mid-policy is not allowed."
+  utter_lic_digi_credit_brochure_surrender_and_revival:
+    - text: "If you surrender this policy after 3 years, an Unexpired Risk Premium Value is paid. Lapsed policies can be revived within five years with interest of up to 9.5% per annum."
+  utter_lic_digi_credit_brochure_exclusions_and_suicide_clause:
+    - text: "For suicide within the first year, only up to 80% of premiums (or the Single Premium paid) may be refunded."
+  utter_lic_digi_credit_brochure_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C, and death benefits are generally tax-free under Section 10(10D), subject to prevailing laws."
+  utter_lic_digi_credit_brochure_grievance_redressal:
+    - text: "For grievances, contact LIC via www.licindia.in or the toll-free number, as specified in the policy."
+
+  # LIC Jeevan Umang Brochure Responses
+  utter_lic_jeevan_umang_brochure_general_information:
+    - text: "LIC Jeevan Umang is a whole life insurance plan that provides lifelong protection along with a survival benefit."
+  utter_lic_jeevan_umang_brochure_eligibility_inquiry:
+    - text: "Eligibility for LIC Jeevan Umang typically requires a minimum entry age, and for a 20-year premium term, a 50-year-old may purchase the plan."
+  utter_lic_jeevan_umang_brochure_coverage_details:
+    - text: "The minimum Basic Sum Assured and the maximum policy term vary; typically, a 30-year-old can secure a plan with a high coverage level."
+  utter_lic_jeevan_umang_brochure_premium_calculation:
+    - text: "For example, a 30-year-old paying annually for a ₹10 lakh sum assured might have specific rates subject to High Sum Assured Rebates."
+  utter_lic_jeevan_umang_brochure_survival_benefits:
+    - text: "Annual survival benefits are provided after the premium payment ends; the exact amount depends on your plan."
+  utter_lic_jeevan_umang_brochure_death_benefits:
+    - text: "The death benefit is calculated as per plan guidelines, ensuring a minimum guaranteed amount is paid out."
+  utter_lic_jeevan_umang_brochure_maturity_benefits:
+    - text: "Maturity benefits include the lump sum payout and any bonuses accrued over the policy term."
+  utter_lic_jeevan_umang_brochure_riders:
+    - text: "Optional riders such as the Premium Waiver Rider can be added to enhance the policy."
+  utter_lic_jeevan_umang_brochure_surrender_value:
+    - text: "Guaranteed Surrender Value is determined based on the policy year and accrued additions, often around 50% of total premiums by Year 5."
+  utter_lic_jeevan_umang_brochure_policy_loan:
+    - text: "Loans up to a certain percentage of the surrender value are available; current rates depend on policy details."
+  utter_lic_jeevan_umang_brochure_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C, though survival benefits may be taxable."
+
+  # LIC Single Premium Endowment Brochure Responses
+  utter_lic_single_premium_endowment_brochure_general_information:
+    - text: "LIC Single Premium Endowment Plan offers a one-time payment option with guaranteed maturity benefits and potential death payouts."
+  utter_lic_single_premium_endowment_brochure_eligibility_inquiry:
+    - text: "Eligibility typically starts at age 18 and, for certain riders, may allow purchase up to 60 years."
+  utter_lic_single_premium_endowment_brochure_coverage_details:
+    - text: "The plan mandates a minimum Basic Sum Assured (for example, ₹1 lakh) with underwriting-dependent upper limits."
+  utter_lic_single_premium_endowment_brochure_premium_calculation:
+    - text: "Premium is paid as a single upfront amount; for example, a ₹5 lakh cover at age 40 has specific pricing and may benefit from High Sum Assured Rebates."
+  utter_lic_single_premium_endowment_brochure_death_benefits:
+    - text: "In the event of death before risk commencement, a refund of premium (excluding taxes) is provided; thereafter, death benefits are calculated as the higher of the Basic Sum Assured or a multiple of the premium."
+  utter_lic_single_premium_endowment_brochure_maturity_benefits:
+    - text: "At maturity, you receive a lump sum including the Basic Sum Assured plus accrued bonuses and additions."
+  utter_lic_single_premium_endowment_brochure_riders:
+    - text: "Optional riders, like the Premium Waiver Rider, can be included at inception, but not afterward."
+  utter_lic_single_premium_endowment_brochure_surrender_value:
+    - text: "During early policy years, Guaranteed Surrender Value is typically 75% of the premium; after that, it increases to 90%."
+  utter_lic_single_premium_endowment_brochure_policy_loan:
+    - text: "Loans may be taken after a specified period (often three months) up to a percentage of the surrender value."
+  utter_lic_single_premium_endowment_brochure_settlement_options:
+    - text: "Nominees can opt to receive the death benefit as a full lump sum or as a combination of a lump sum and monthly income."
+  utter_lic_single_premium_endowment_brochure_revival_process:
+    - text: "A lapsed policy can be revived within five years by paying all due premiums along with interest."
+  utter_lic_single_premium_endowment_brochure_exclusions:
+    - text: "Exclusions include suicide within one year and specific benefits unrelated to covered risks."
+  utter_lic_single_premium_endowment_brochure_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C, and maturity benefits are tax-free under prevailing laws."
+  utter_lic_single_premium_endowment_brochure_grievance_redressal:
+    - text: "For any grievances, contact LIC via the official website or toll-free number as specified in your plan documents."
+
+  # LIC Saral Pension Responses
+  utter_lic_saral_pension_general_plan_information:
+    - text: "LIC Saral Pension is a savings-cum-protection plan offering a guaranteed maturity benefit along with the return of premiums paid in some cases."
+  utter_lic_saral_pension_annuity_options:
+    - text: "Annuity options include Life Annuity and Joint Life Annuity. The plan can provide death benefits with a return of purchase price to your nominees."
+  utter_lic_saral_pension_eligibility_inquiry:
+    - text: "Eligibility for LIC Saral Pension is typically defined by age limits; for instance, a minimum age is 18, and for Pay till Age 60, up to 44 years may apply."
+  utter_lic_saral_pension_coverage_details:
+    - text: "The minimum annuity amount varies by payment mode (e.g., ₹1,000/month, ₹3,000/quarter), with the Basic Sum Assured starting at ₹10 lakh for non-medical sales."
+  utter_lic_saral_pension_incentives_and_rebates:
+    - text: "Incentives such as rebates may apply for online purchases or higher purchase price slabs."
+  utter_lic_saral_pension_death_benefits:
+    - text: "Death benefits involve returning the total purchase price (or 105% of premiums paid) to your nominee, depending on the selected option."
+  utter_lic_saral_pension_surrender_value:
+    - text: "Guaranteed Surrender Value is calculated based on a percentage of the purchase price minus annuities paid. Special provisions may apply after a certain period."
+  utter_lic_saral_pension_loan_facility:
+    - text: "Loans can be taken against the surrender value of the policy, subject to limits defined by LIC."
+  utter_lic_saral_pension_tax_implications:
+    - text: "Premiums may be eligible for tax deductions under Section 80C, while death benefits are generally tax-free under Section 10(10D)."
+  utter_lic_saral_pension_free_look_period:
+    - text: "You can cancel your policy during the free look period for a refund, subject to deductions like stamp duty."
+
+  # LIC New Pension Plus Responses
+  utter_lic_new_pension_plus_general_plan_information:
+    - text: "LIC New Pension Plus is a linked, non-participating pension plan with options for a regular premium to accumulate a retirement corpus."
+  utter_lic_new_pension_plus_premium_payment_options:
+    - text: "You can pay premiums either as a single premium, regular premium, limited premium (5/10/12/15 years), or Pay till Age 60 option."
+  utter_lic_new_pension_plus_eligibility_inquiry:
+    - text: "The minimum entry age for LIC New Pension Plus is 25 years, with the maximum differing by the chosen premium payment option."
+  utter_lic_new_pension_plus_coverage_details:
+    - text: "Policy term and fund options vary; for example, the policy term is calculated as the vesting age minus entry age, and investment funds like Pension Bond and Pension Growth are available."
+  utter_lic_new_pension_plus_death_benefits:
+    - text: "If you pass away before vesting, the death benefit is the higher of the Basic Sum Assured or a specified multiplier of the premium, as per plan guidelines."
+  utter_lic_new_pension_plus_vesting_benefits:
+    - text: "At vesting, you can choose to purchase an annuity immediately, defer the annuity, or commute a portion of your pension corpus."
+  utter_lic_new_pension_plus_guaranteed_additions:
+    - text: "Guaranteed Additions are credited as a percentage of the premium in the 6th, 10th, and 11th-15th years, differing between Regular and Single Premium modes."
+  utter_lic_new_pension_plus_fund_switching:
+    - text: "You are typically allowed up to four free fund switches per year; additional switches may incur a small fee."
+  utter_lic_new_pension_plus_surrender_and_partial_withdrawals:
+    - text: "Surrender after five years is allowed, with the Guaranteed Surrender Value calculated as a function of premiums paid and accrued bonuses. Partial withdrawals may be permitted under certain conditions."
+  utter_lic_new_pension_plus_loan_facility:
+    - text: "Policy loans are available after a specified period – follow guidelines to ensure the loan interest does not exceed 50% of annual annuity income."
+  utter_lic_new_pension_plus_tax_implications:
+    - text: "Premiums are eligible for tax deductions under Section 80C. Maturity benefits and commuted amounts are generally tax-free under Section 10(10D), subject to prevailing laws."
+  utter_lic_new_pension_plus_free_look_period:
+    - text: "You can cancel your policy within the free look period (15 or 30 days) depending on the purchase mode; refunds exclude charges and stamp duty."
+  utter_lic_new_pension_plus_grievance_redressal:
+    - text: "For grievances, contact LIC through their website or call the designated toll-free number."
+
+  # LIC New Jeevan Shanti Responses
+  utter_lic_new_jeevan_shanti_general_plan_information:
+    - text: "LIC New Jeevan Shanti is a deferred annuity plan offering the option to receive pension benefits after a deferment period."
+  utter_lic_new_jeevan_shanti_annuity_options:
+    - text: "You can choose from various annuity options including Joint Life Annuity, where benefits are paid after both lives, or Single Life with optional riders."
+  utter_lic_new_jeevan_shanti_eligibility_inquiry:
+    - text: "For LIC New Jeevan Shanti, the minimum purchase price and other eligibility criteria are determined based on the annuity option selected."
+  utter_lic_new_jeevan_shanti_coverage_details:
+    - text: "The minimum deferment period and computation of the death benefit depend on your chosen annuity variant and premium structure."
+  utter_lic_new_jeevan_shanti_death_benefits:
+    - text: "Death benefits are calculated as the higher of the Basic Sum Assured or a multiple of the premium, per plan guidelines."
+  utter_lic_new_jeevan_shanti_incentives_and_rebates:
+    - text: "Additional rebates may be available for higher purchase prices or online purchases."
+  utter_lic_new_jeevan_shanti_surrender_value:
+    - text: "Surrender value is based on the purchase price, premium deficit, and prorated annuities paid; it is available after the deferment period."
+  utter_lic_new_jeevan_shanti_loan_facility:
+    - text: "You can avail policy loans after a specified period; the maximum loan amount is subject to guidelines."
+  utter_lic_new_jeevan_shanti_payment_modes:
+    - text: "Annuity payments can be received monthly, quarterly, half-yearly, or yearly, with adjustments applied to the annuity rate."
+  utter_lic_new_jeevan_shanti_free_look_period:
+    - text: "A free look period is available (15–30 days) during which you can cancel the policy for a refund, subject to deduction."
+  utter_lic_new_jeevan_shanti_tax_implications:
+    - text: "Premiums may be tax-deductible under Section 80C, while pension payments are taxable as per prevailing laws."
+
+  # LIC Jeevan Akshay-VII Brochure Responses
+  utter_lic_jeevan_akshay_vii_general_plan_information:
+    - text: "LIC Jeevan Akshay-VII is an immediate annuity plan offering multiple annuity options to suit your retirement needs."
+  utter_lic_jeevan_akshay_vii_annuity_options:
+    - text: "The plan includes options such as Immediate Annuity for Life, Guaranteed Period Annuity, and options with return of the purchase price."
+  utter_lic_jeevan_akshay_vii_eligibility_inquiry:
+    - text: "Eligibility typically requires a minimum age of 25 years for most options, although certain options allow up to 100 years (for return of purchase price variant)."
+  utter_lic_jeevan_akshay_vii_payment_modes:
+    - text: "Annuity payments can be received on a monthly, quarterly, half-yearly, or yearly basis."
+  utter_lic_jeevan_akshay_vii_death_benefits:
+    - text: "For options with death benefit, the nominee receives the purchase price back upon the death of the last survivor."
+  utter_lic_jeevan_akshay_vii_surrender_value:
+    - text: "Surrender value is available (for certain options) after three months or once the free look period expires, calculated as per LIC guidelines."
+  utter_lic_jeevan_akshay_vii_loan_facility:
+    - text: "Policy loans can be taken after three months, with limits set based on the surrender value."
+  utter_lic_jeevan_akshay_vii_incentives:
+    - text: "Higher purchase price incentives are provided as rebates—up to a specified percentage of the premium."
+  utter_lic_jeevan_akshay_vii_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C; annuity income is taxable as per current laws."
+
+  # Max Life Secure Earnings & Wellness Advantage Plan Responses
+  utter_maxlife_secure_earnings_wellness_general_plan_information:
+    - text: "Max Life Secure Earnings & Wellness Advantage Plan offers a combination of protection and savings, along with healthcare and wellness benefits."
+  utter_maxlife_secure_earnings_wellness_variant_selection:
+    - text: "This plan is available in Elite and Lite variants. The Elite variant includes healthcare benefits and limited pay, while the Lite variant has regular pay."
+  utter_maxlife_secure_earnings_wellness_eligibility_inquiry:
+    - text: "Eligibility requires a minimum entry age of 18 years and a maximum age depending upon the variant, such as up to 55 years for Elite."
+  utter_maxlife_secure_earnings_wellness_premium_payment_options:
+    - text: "Premiums for this plan can be paid as Limited Pay (for Elite) or Regular Pay (for Lite) on an annual, half-yearly, quarterly, or monthly basis."
+  utter_maxlife_secure_earnings_wellness_coverage_details:
+    - text: "For example, the Fixed Daily Hospitalization Cash Benefit (FDHC) and death benefit are computed based on the selected sum assured and variant."
+  utter_maxlife_secure_earnings_wellness_maturity_benefits:
+    - text: "The Elite variant includes a maturity benefit comprising the Sum Assured, Loyalty Booster, Wellness Booster, and Savings Booster; the Lite variant includes the Sum Assured, Loyalty Booster, and Wellness Booster."
+  utter_maxlife_secure_earnings_wellness_health_care_benefit_option:
+    - text: "Under the Health Care Benefit Option in the Elite variant, you can withdraw a percentage (e.g., up to 20%) of accrued benefits during emergencies."
+  utter_maxlife_secure_earnings_wellness_wellness_program:
+    - text: "The wellness program awards bonuses and discount incentives based on your healthy lifestyle and participation in wellness activities."
+  utter_maxlife_secure_earnings_wellness_surrender_value:
+    - text: "Guaranteed Surrender Value (GSV) is calculated based on premiums paid and accrued benefits, as per plan guidelines (e.g., 75% of premium in early years, increasing thereafter)."
+  utter_maxlife_secure_earnings_wellness_loan_facility:
+    - text: "After three years, you may avail a policy loan up to a defined percentage of the surrender value."
+  utter_maxlife_secure_earnings_wellness_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C, whereas annuity payouts may be taxable as per prevailing income tax laws."
+  utter_maxlife_secure_earnings_wellness_free_look_period:
+    - text: "A free look period (15 days, or 30 days for online purchases) is available; refunds are processed after applicable deductions."
+  utter_maxlife_secure_earnings_wellness_discounts:
+    - text: "Discounts, such as a 5% online purchase discount or special rates for transgender/female customers, may apply."
+
+  # Max Life Monthly Income Advantage Plan Responses
+  utter_maxlife_monthly_income_general_plan_information:
+    - text: "Max Life Monthly Income Advantage Plan guarantees a monthly income after the premium payment term with additional bonus incentives."
+  utter_maxlife_monthly_income_eligibility_inquiry:
+    - text: "Eligibility details include a minimum entry age of 18 years and maximum limits that vary based on the chosen premium term."
+  utter_maxlife_monthly_income_premium_payment_options:
+    - text: "You can pay premiums on a fixed term (6, 8, or 12 years) by yearly, half-yearly, quarterly, or monthly payment modes."
+  utter_maxlife_monthly_income_income_benefits:
+    - text: "For example, after the premium payment term, you'll receive a fixed monthly income plus annual bonuses (including a terminal bonus) for 15 years."
+  utter_maxlife_monthly_income_maturity_benefits:
+    - text: "At maturity, you receive a lump sum that includes accrued bonuses along with your initial assured amount."
+  utter_maxlife_monthly_income_death_benefits:
+    - text: "In case of death during the premium payment term, the death benefit is the higher of the Sum Assured on Death or 105% of total premiums paid; your nominee can opt for either a lump sum or continued monthly income."
+  utter_maxlife_monthly_income_surrender_value:
+    - text: "Guaranteed Surrender Value is calculated based on total premiums paid and accrued bonuses, following Max Life guidelines."
+  utter_maxlife_monthly_income_loan_facility:
+    - text: "Policy loans are available after three years of policy inception, with the maximum loan amount determined by a percentage of the surrender value."
+  utter_maxlife_monthly_income_tax_implications:
+    - text: "Premiums qualify for Section 80C deductions, but monthly income payouts are taxable under current income tax laws."
+  utter_maxlife_monthly_income_free_look_period:
+    - text: "You can cancel your policy within the free look period (15 or 30 days), with refunds subject to applicable deductions."
+
+  # Smart Term Plan Responses
+  utter_smart_term_general_plan_information:
+    - text: "Max Life Smart Term Plan is a term insurance plan that offers both Level and Increasing Sum Assured options with flexible premium payments."
+  utter_smart_term_sum_assured_options:
+    - text: "Choose Level Sum Assured to keep your benefit constant, or Increasing Sum Assured to boost your cover by a fixed percentage (e.g., 5% per year) without increasing premiums."
+  utter_smart_term_eligibility_inquiry:
+    - text: "Eligibility for Smart Term Plan requires a minimum age of 18 years; the maximum age varies by product and premium type."
+  utter_smart_term_premium_payment_details:
+    - text: "Premiums can be paid monthly, quarterly, semi-annually, or annually. Rates depend on age, gender, and chosen coverage."
+  utter_smart_term_death_benefit_payout_options:
+    - text: "Settlement options include receiving the death benefit as a full lump sum or as a combination of a lump sum and monthly income."
+  utter_smart_term_policy_term_options:
+    - text: "Policy terms range from as few as 10 years up to 35 or more years, based on your chosen plan."
+  utter_smart_term_inflation_protection:
+    - text: "Inflation protection is provided via the Increasing Sum Assured option, allowing your cover to grow without an increase in premiums."
+  utter_smart_term_surrender_value:
+    - text: "Surrender value is available after a specified duration and is calculated based on premiums paid and bonuses accrued."
+  utter_smart_term_tax_implications:
+    - text: "Premiums are tax-deductible under Section 80C; death benefits are generally tax-free under Section 10(10D), subject to prevailing laws."
+
+  # Super Term Plan Responses
+  utter_super_term_general_plan_information:
+    - text: "Max Life Super Term Plan is a term insurance product offering both fixed (Level) and growing (Increasing) sum assured options."
+  utter_super_term_sum_assured_options:
+    - text: "You can choose between a Level Sum Assured or an Increasing Sum Assured option wherein the cover increases annually (e.g., by 5%)."
+  utter_super_term_eligibility_inquiry:
+    - text: "Eligibility for Super Term Plan typically starts at age 18, with maximum entry age varying by product option."
+  utter_super_term_premium_payment_details:
+    - text: "Premiums are payable via annual, semi-annual, quarterly, or monthly modes; the cost is determined by age, sum assured, and other factors."
+  utter_super_term_death_benefit_payout_options:
+    - text: "Death benefits can be disbursed entirely as a lump sum or split as monthly income based on the selected settlement option."
+  utter_super_term_policy_term_options:
+    - text: "You can tailor the policy term from as low as 10 years up to 25 years, depending on your requirements."
+  utter_super_term_inflation_protection:
+    - text: "The Increasing Sum Assured option ensures your coverage rises annually by a fixed rate, protecting against inflation without increasing premiums."
+  utter_super_term_surrender_value:
+    - text: "Guaranteed Surrender Value is calculated per LIC guidelines, based on premiums and applicable bonus factors."
+  utter_super_term_tax_implications:
+    - text: "Premiums are eligible for tax deductions under Section 80C; death benefit payouts are generally tax-free subject to conditions."
+
+  # Max Life Smart Guaranteed Pension Plan Responses
+  utter_maxlife_smart_guaranteed_general_plan_information:
+    - text: "Max Life Smart Guaranteed Pension Plan offers a non-linked, non-participating annuity option that guarantees a lifetime income payout."
+  utter_maxlife_smart_guaranteed_eligibility_inquiry:
+    - text: "Eligibility requires a minimum entry age of 30 years and up to 85 years for purchase, with a minimum purchase price of ₹1,50,000."
+  utter_maxlife_smart_guaranteed_annuity_options:
+    - text: "The plan offers Single Life and Joint Life Immediate Annuity options, with or without a death benefit."
+  utter_maxlife_smart_guaranteed_payment_modes:
+    - text: "You can choose various payout modes including monthly, quarterly, semi-annually, or yearly for receiving your annuity."
+  utter_maxlife_smart_guaranteed_death_benefits:
+    - text: "In the event of death, the purchase price plus any top-up premiums is returned to your nominee, as per the plan's death benefit option."
+  utter_maxlife_smart_guaranteed_surrender_value:
+    - text: "The Guaranteed Surrender Value is calculated based on total premiums paid minus annuities disbursed, or using a special calculation defined by Max Life."
+  utter_maxlife_smart_guaranteed_top_up_option:
+    - text: "With the top-up option, you can increase your annuity amount by paying additional premium; the minimum top-up is ₹1,00,000."
+  utter_maxlife_smart_guaranteed_advance_annuity_option:
+    - text: "This option lets you withdraw a lump sum equivalent to the present value of the next five years' annuity payments after the first death among joint lives."
+  utter_maxlife_smart_guaranteed_tax_implications:
+    - text: "Premiums qualify for Section 80C deductions; however, annuity payouts are taxable as per prevailing tax regulations."
+  utter_maxlife_smart_guaranteed_free_look_period:
+    - text: "You can cancel the policy within the free look period (typically 15 or 30 days), with refunds processed after applicable charges."
+
+  # SWAG Pension Prospectus Responses
+  utter_swag_pension_general_plan_information:
+    - text: "Max Life Smart Wealth Annuity Guaranteed Pension Plan (SWAG) is a versatile plan offering both immediate and deferred annuity options with various enhancements."
+  utter_swag_pension_annuity_options:
+    - text: "You can choose between Immediate and Deferred Annuity options, available as Single Life or Joint Life, with an option for a death benefit."
+  utter_swag_pension_eligibility_inquiry:
+    - text: "Eligibility typically requires a minimum entry age (commonly 30 for immediate annuity) up to 85 years, subject to the vesting age for deferred annuities."
+  utter_swag_pension_premium_payment_options:
+    - text: "Premiums can be paid either as a Single Premium or as Limited Premium over a defined number of years."
+  utter_swag_pension_annuity_payout_modes:
+    - text: "Annuity payments can be received monthly, and the deferment period for a Single Premium Deferred Annuity can vary according to the chosen vesting age."
+  utter_swag_pension_death_benefits:
+    - text: "Death benefits return 100% of the total premiums paid when using a Joint Life annuity with death benefit after both lives pass away."
+  utter_swag_pension_surrender_value:
+    - text: "Guaranteed Surrender Value is calculated as the higher of 50% of total premiums paid (minus annuities already disbursed) or a special surrender value determined by Max Life."
+  utter_swag_pension_advance_annuity_option:
+    - text: "With the Advance Annuity Option, you can withdraw five years of future annuity payments as a lump sum after the first death among joint lives."
+  utter_swag_pension_top_up_option:
+    - text: "You can further enhance your annuity amount with a top-up premium. The minimum top-up is ₹1,00,000, with no maximum cap."
+  utter_swag_pension_inflation_protection:
+    - text: "The Increasing Annuity option ensures that your annuity grows each year by a fixed percentage (e.g., 5% annually) without requiring higher premiums."
+  utter_swag_pension_tax_implications:
+    - text: "Premiums for SWAG are eligible for tax deductions under Section 80C, and annuity payouts are taxable as per the prevailing Income Tax Act."
+  utter_swag_pension_free_look_period:
+    - text: "You can cancel your policy within the free look period (typically 15–30 days) with refunds processed after applicable deductions."
+
